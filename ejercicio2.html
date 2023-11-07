@@ -5,28 +5,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <script>
-    //Dado 3 lados de 1 triangulo isosceles, diga si es equilatero, sisosceles o escaleno.
+    // Dado 3 lados de 1 triángulo isosceles, diga si es equilátero, isósceles o escaleno.
 
-    var a = parseInt(prompt("Ingrese el primer lado del triangulo"));
-    var b = parseInt(prompt("Ingrese el segundo lado del triangulo"));
-    var c = parseInt(prompt("Ingrese el tercer lado del triangulo"));
+    var lado1 = parseInt(prompt("Ingrese el primer lado del triángulo"));
+    var lado2 = parseInt(prompt("Ingrese el segundo lado del triángulo"));
+    var lado3 = parseInt(prompt("Ingrese el tercer lado del triángulo"));
 
-
-
-
-    // Dado los dados de 1 triangulo rectangulo.  a = cateto opuesto b = cateto adyacente, calcular la hipotenusa math.sqrt() c=math.sqrt(a*a)+math.sqrt(b*b)
-
-
-
-
-
-
-
-// Calcular las raices de una ec de 2do grado usando la resolvente
+    if (lado1 === lado2 && lado2 === lado3) {
+      alert("El triángulo es equilátero.");
+    } else if (lado1 === lado2 || lado2 === lado3 || lado1 === lado3) {
+      alert("El triángulo es isósceles.");
+    } else {
+      alert("El triángulo es escaleno.");
+    }
 
 
 
 
+    // Dados los catetos de un triángulo rectángulo (a y b), calcular la hipotenusa usando el teorema de Pitágoras.
+    
+    var catetoA = parseInt(prompt("Ingrese la longitud del cateto opuesto (a)"));
+    var catetoB = parseInt(prompt("Ingrese la longitud del cateto adyacente (b)"));
+
+    var hipotenusa = Math.sqrt(catetoA * catetoA + catetoB * catetoB);
+    alert("La hipotenusa del triángulo rectángulo es: " + hipotenusa);
+
+
+
+
+    // Calcular el resultado de una ecuación de segundo grado usando la fórmula general.
+
+    // Solicitar los valores de a, b y c al usuario
+    var a = parseInt(prompt("Ingrese el valor de 'a' en la ecuación cuadrática"));
+    var b = parseInt(prompt("Ingrese el valor de 'b' en la ecuación cuadrática"));
+    var c = parseInt(prompt("Ingrese el valor de 'c' en la ecuación cuadrática"));
+
+    // Calcular el discriminante
+    var discriminante = b * b - 4 * a * c;
+
+    // Determinar las soluciones de la ecuación cuadrática
+    if (discriminante > 0) {
+        // Dos soluciones reales
+        var raiz1 = (-b + Math.sqrt(discriminante)) / (2 * a);
+        var raiz2 = (-b - Math.sqrt(discriminante)) / (2 * a);
+        alert("Las soluciones son: " + raiz1 + " y " + raiz2);
+    } else if (discriminante === 0) {
+        // Una solución real
+        var raizUnica = -b / (2 * a);
+        alert("La ecuación tiene una solución única: " + raizUnica);
+    } else {
+        // No hay soluciones reales
+        alert("La ecuación no tiene soluciones reales.");
+    }
 
 
 
