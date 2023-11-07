@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Operadores Lógicos</title>
+</head>
+<body>
+  <script>
+    // Variables
+    let a = 50;
+    let b = 60;
+    let c = 90;
+    let str = "Hello";
+    let bool1 = true;
+    let bool2 = false;
+
+    // Imprimir encabezado
+    document.write("<h1>Operadores Lógicos</h1>");
+
+    // Imprimir valores de las variables
+    document.write("a = " + a + "<br>");
+    document.write("b = " + b + "<br>");
+    document.write("c = " + c + "<br>");
+    document.write("str = '" + str + "'<br>");
+    document.write("bool1 = " + bool1 + "<br>");
+    document.write("bool2 = " + bool2 + "<br>");
+
+    // Operadores lógicos
+    document.write("<br>a == 50? " + (a == 50) + "<br>");
+    document.write("a != 99? " + (a != 99) + "<br>");
+    document.write("b >= 60? " + (b >= 60) + "<br>");
+    document.write("c <= 90? " + (c <= 90) + "<br>");
+    document.write("a < 60? " + (a < 60) + "<br>");
+    document.write("b > 50? " + (b > 50) + "<br>");
+
+    // Tipos de datos
+    document.write("<br>typeof a: " + typeof a + "<br>");
+    document.write("typeof str: " + typeof str + "<br>");
+    document.write("typeof bool1: " + typeof bool1 + "<br>");
+
+    // Comparación estricta y desigualdad
+    document.write("<br>bool1 === true? " + (bool1 === true) + "<br>");
+    document.write("bool2 === false? " + (bool2 === false) + "<br>");
+
+    // Comparación de tipo y valor
+    document.write("<br>a es igual a 50 y ambos son números: ");
+    document.write("a === '50'? " + (a === '50') + "<br>");
+
+    // Comparación de tipo y valor con diferentes tipos
+    document.write("a es igual a 50 y ambos son de diferentes tipos: ");
+    document.write("a === '50'? " + (a === '50') + "<br>");
+
+    // Desigualdad estricta
+    document.write("a !== '99'? " + (a !== '99') + "<br>");
+  </script>
+</body>
+</html>

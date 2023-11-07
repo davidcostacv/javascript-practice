@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cálculos y Verificaciones</title>
+  <script>
+
+    var a = parseInt(prompt("Ingrese un número cualquiera"));
+    var b = parseInt(prompt("Ingrese otro número"));
+
+    // Multiplo
+    var sonMultiplos = a % b === 0 || b % a === 0;
+
+    // Par
+    var EsPar = a % 2 === 0 || b % 2 === 0;
+
+    //3.1
+    var cuadradoA = a * a;
+    var sumaAB = a + b;
+    var restaAB = a - b;
+    var productoAB = a * b;
+
+    //3.2
+    var cocienteEntero = a / b 
+    var residuo = a % b 
+
+    
+
+    alert("Son múltiplos: " + sonMultiplos + "\nAlguno es par: " + EsPar);
+    alert("Cuadrado de a: " + cuadradoA)
+    alert("Suma de a y b: " + sumaAB)
+    alert("Resta de a y b: " + restaAB)
+    alert("Producto de a y b: " + productoAB)
+    alert("Cociente Entero: " + cocienteEntero)
+    alert("Residuo: " + residuo)
+
+  </script>
+</head>
+<body>
+</body>
+</html>
